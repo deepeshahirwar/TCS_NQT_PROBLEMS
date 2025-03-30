@@ -60,10 +60,12 @@ void deepesh7024(){
   
      // find the sum of all the numbers from n to m 
      int n,m; 
-     cin>>n>>m; 
-     int leftSum = ((n-1)*n)/2;
+     cin>>n>>m;  
+     // this is the sum of the numbers from 1 to n-1
+     int leftSum = ((n-1)*n)/2; 
+     // this is the sum of the numbers from 1 to m
      int totalSum = m*(m+1)/2; 
-
+      // this is the sum of the numbers from n to m
         int ans = totalSum - leftSum; 
 
         cout<<ans<<endl;
